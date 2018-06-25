@@ -18,7 +18,7 @@ line_bot_api = LineBotApi('1rlpuoat/3VN1Wzms6B4o9HGlED3g0jHDmswfobFG1PQ8o30mr3lZ
 handler = WebhookHandler('491c1f32f71934d5c173272beb4d5d83')
 
 # 設定你接收訊息的網址，如 https://YOURAPP.herokuapp.com/callback
-@app.route("/callback", methods=['POST'])
+@app.route("/", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
