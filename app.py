@@ -19,7 +19,7 @@ handler = WebhookHandler('')
 
 # 設定你接收訊息的網址，如 https://YOURAPP.herokuapp.com/callback
 @app.route("/", methods=['POST'])
-def callback():
+def index():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
 
