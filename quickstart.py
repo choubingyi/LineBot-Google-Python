@@ -76,7 +76,3 @@ def sort(clid,name):
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
-
-
-if __name__ == '__main__':
-    sort('秉逸')
