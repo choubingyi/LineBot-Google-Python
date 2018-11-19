@@ -54,7 +54,7 @@ def get_credentials():
         print('Storing credentials to ' + credential_path)
     return credentials
 
-def sort(name):
+def sort(clid,name):
     """Shows basic usage of the Google Calendar API.
 
     Creates a Google Calendar API service object and outputs a list of the next
@@ -67,7 +67,7 @@ def sort(name):
     now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
     print('Getting the upcoming 10 events')
     eventsResult = service.events().list(
-        calendarId='anpaub2pj8iptavjedaqkpaekk@group.calendar.google.com', timeMin=now, maxResults=10, singleEvents=True, q=name,
+        calendarId=clid, timeMin=now, maxResults=10, singleEvents=True, q=name,
         orderBy='startTime').execute()
     events = eventsResult.get('items', [])
 
