@@ -1,9 +1,8 @@
 Google Calendar API + Line Bot + Python + Heroku
 ===
 
-##Introduction
+## Introduction
 In this project, you can learn how to create the 'Line Bot' which can search your google calendar!
-
 You need prepare your environment which has git & python.
 
 I'll give some base skill web-site.
