@@ -1,4 +1,4 @@
-Google Calendar API + Line Bot + Python
+Google Calendar API + Line Bot + Python + Heroku
 ===
 
 ##Introduction
